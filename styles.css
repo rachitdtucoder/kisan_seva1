@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #4CAF50;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.actions input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    flex-grow: 1;
+    margin-left: 600px;
+}
+
+.actions button {
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1rem;
+}
+
+.actions button:hover {
+    background-color: #45a049;
+}
+
+.add-medicine {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+}
+
+.add-medicine h2 {
+    margin-bottom: 10px;
+}
+
+.add-medicine input {
+    margin-right: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.add-medicine button {
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1rem;
+}
+
+.add-medicine button:hover {
+    background-color: #45a049;
+}
+
+.transactions, .inventory {
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+table th {
+    background-color: #f2f2f2;
+}
+
+table td.actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+table td.actions button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    border-radius: 4px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+}
+
+table td.actions button:hover {
+    background-color: #45a049;
+}
+
+table td.amount-pending {
+    font-weight: bold;
+    color: red;
+}
+

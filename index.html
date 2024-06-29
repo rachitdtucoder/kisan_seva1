@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicine Shop Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>UJLAYAN KISAN SEVA KENDRA(MAIN SHOP), BARODA</h1>
+        <div class="actions">
+            <button id="addTransactionBtn">Add Transaction</button>
+            <input type="text" id="searchInput" placeholder="Search by Customer Name">
+        </div>
+        <div class="add-medicine">
+            <h2>Add Medicine</h2>
+            <input type="text" id="medicineName" placeholder="Medicine Name">
+            <input type="number" id="medicineQuantity" placeholder="Quantity">
+            <button id="addMedicineBtn">Add Medicine</button>
+        </div>
+        <div class="transactions">
+            <h2>Transactions</h2>
+            <table id="transactionTable">
+                <thead>
+                    <tr>
+                        <th>Serial</th>
+                        <th>Date</th>
+                        <th>Customer Name</th>
+                        <th>Customer Mobile</th>
+                        <th>Medicine</th>
+                        <th>Quantity Sold</th>
+                        <th>Buying Price</th>
+                        <th>Selling Price</th>
+                        <th>Profit</th>
+                        <th>Amount Paid</th>
+                        <th>Amount Pending</th>
+                        <th>Total Amount</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="transactionTableBody">
+                    <!-- Transaction rows will be added here dynamically -->
+                </tbody>
+            </table>
+        </div>
+        <div class="inventory">
+            <h2>Inventory</h2>
+            <table id="inventoryTable">
+                <thead>
+                    <tr>
+                        <th>Serial</th>
+                        <th>Medicine</th>
+                        <th>Quantity</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="inventoryTableBody">
+                    <!-- Inventory rows will be added here dynamically -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
